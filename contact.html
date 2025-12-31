@@ -1,0 +1,175 @@
+<!-- =========================
+PAGE 4: contact.html
+========================= -->
+<!DOCTYPE html>
+<html>
+<head>
+<title>Contact | Pitman Online Academy</title>
+<link rel="stylesheet" href="style.css">
+<!-- Google Font -->
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+
+<style>
+:root{
+  --violet-dark:#2a0a4a;
+  --violet-main:#5b2b82;
+  --violet-soft:#8f6bbd;
+  --white:#ffffff;
+}
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:'Poppins',sans-serif;
+}
+
+body{
+  background:#f4f4f4;
+  color:#222;
+}
+
+/* HEADER */
+header{
+  background:linear-gradient(135deg,var(--violet-dark),var(--violet-main));
+  padding:20px 8%;
+  color:var(--white);
+}
+
+nav{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+}
+
+nav h1{
+  font-size:24px;
+  letter-spacing:1px;
+}
+
+nav ul{
+  list-style:none;
+  display:flex;
+  gap:25px;
+}
+
+nav ul li a{
+  color:#fff;
+  text-decoration:none;
+  font-weight:500;
+}
+
+/* SECTION */
+.section{
+  padding:80px 8%;
+  background:#fff;
+}
+
+.section h2{
+  text-align:center;
+  font-size:32px;
+  color:var(--violet-main);
+  margin-bottom:40px;
+}
+
+/* QR CARDS */
+.qr-wrapper{
+  display:flex;
+  justify-content:center;
+  gap:40px;
+  flex-wrap:wrap;
+}
+
+.qr-card{
+  text-decoration:none;
+  background:linear-gradient(135deg,var(--violet-main),var(--violet-soft));
+  padding:25px;
+  width:200px;
+  border-radius:20px;
+  text-align:center;
+  box-shadow:0 20px 50px rgba(0,0,0,0.15);
+  transition:0.3s ease;
+}
+
+.qr-card:hover{
+  transform:translateY(-8px);
+  box-shadow:0 30px 70px rgba(0,0,0,0.25);
+}
+
+.qr-card img{
+  width:140px;
+  background:#fff;
+  padding:10px;
+  border-radius:12px;
+}
+
+.qr-card span{
+  display:block;
+  margin-top:15px;
+  color:#fff;
+  font-weight:600;
+  font-size:16px;
+}
+
+/* FOOTER */
+footer{
+  background:var(--violet-dark);
+  color:#fff;
+  text-align:center;
+  padding:25px;
+  margin-top:60px;
+}
+</style>
+</head>
+<body>
+<header>
+<nav>
+<h1>Pitman Online Academy</h1>
+<ul>
+<li><a href="index.html">Home</a></li>
+<li><a href="coursees.html">Courses</a></li>
+<li><a href="about.html">About</a></li>
+<li><a href="contact.html">Contact</a></li>
+</ul>
+</nav>
+</header>
+
+
+<section class="section">
+  <h2>Contact & Connect</h2>
+
+  <div class="qr-wrapper">
+
+    <!-- WhatsApp -->
+    <a href="https://wa.me/923229644735" target="_blank" class="qr-card">
+      <img src="qrwp2.jpg" alt="WhatsApp QR">
+      <span>WhatsApp Chat</span>
+    </a>
+
+    <!-- Instagram -->
+    <a href="https://instagram.com/pitmanonlineacademy" target="_blank" class="qr-card">
+      <img src="qrinsta.jpg" alt="Instagram QR">
+      <span>Instagram Profile</span>
+    </a>
+
+    <!-- Email -->
+    <a href="mailto:info: pitmanonlineacademy@gmail.com" target="_blank" class="qr-card">
+      <img src="emailqr.jpg" alt="Email QR">
+      <span>Email Us</span>
+    </a>
+    <!-- Facebook -->
+<a href="https://facebook.com/pitmanonlineacademy" target="_blank" class="qr-card">
+<img src="facebookqr.jpg" alt="Facebook QR">
+<span>Facebook Page</span>
+</a>
+
+  </div>
+</section>
+
+
+
+<footer>
+<p>We respond within 24 hours</p>
+</footer>
+</body>
+</html>

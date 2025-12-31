@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+:root{
+  --violet-dark:#2a0a4a;
+  --violet-main:#5b2b82;
+  --violet-soft:#8f6bbd;
+  --white:#ffffff;
+  --gray:#f4f4f4;
+}
+
+*{margin:0;padding:0;box-sizing:border-box;font-family:'Poppins',sans-serif;}
+body{background:var(--gray);color:#222;}
+
+header{
+  background:linear-gradient(135deg,var(--violet-dark),var(--violet-main));
+  padding:20px 8%;
+  color:var(--white);
+}
+
+nav{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+}
+
+nav h1{font-size:24px;letter-spacing:1px;}
+nav ul{list-style:none;display:flex;gap:25px;}
+nav ul li a{
+  text-decoration:none;
+  color:var(--white);
+  font-weight:500;
+}
+
+.hero{
+  padding:80px 8%;
+  background:linear-gradient(135deg,var(--violet-main),var(--violet-soft));
+  color:var(--white);
+}
+.hero h2{font-size:40px;margin-bottom:15px;}
+.hero p{max-width:600px;line-height:1.7;}
+
+.section{
+  padding:70px 8%;
+  background:var(--white);
+}
+.section h3{
+  font-size:30px;
+  color:var(--violet-main);
+  margin-bottom:20px;
+}
+
+.cards{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+  gap:25px;
+}
+.card{
+  
+  background:#9d62e9;
+  padding:25px;
+  border-radius:12px;
+  box-shadow:0 10px 30px rgba(0,0,0,0.08);
+}
+.card h4{color:var(--violet-main);margin-bottom:10px;}
+
+footer{
+  background:var(--violet-dark);
+  color:var(--white);
+  text-align:center;
+  padding:25px;
+  margin-top:50px;
+}
+
+.btn{
+  display:inline-block;
+  margin-top:20px;
+  padding:12px 30px;
+  background:var(--white);
+  color:var(--violet-main);
+  border-radius:30px;
+  text-decoration:none;
+  font-weight:600;
+}
+
+.form{
+  max-width:500px;
+}
+.form input,.form textarea{
+  width:100%;
+  padding:12px;
+  margin-bottom:15px;
+  border-radius:8px;
+  border:1px solid #ccc;
+}
+.form button{
+  padding:12px 25px;
+  background:var(--violet-main);
+  color:var(--white);
+  border:none;
+  border-radius:25px;
+  font-size:16px;
+}
